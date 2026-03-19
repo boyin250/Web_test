@@ -1298,24 +1298,7 @@ input, select, textarea {
 			border-radius: 100%;
 		}
 
-/* Make the logo circle a flex container and ignore the old line-height centering */
-#header .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
 
-  /* override template icon centering rules */
-  line-height: normal;
-}
-
-/* Size the image relative to the circle */
-#header .logo .logo-img {
-  width: 35%;
-  height: 35%;
-  object-fit: cover; /* use 'cover' if you want it to fill the circle */
-  display: block;
-}
 
 
 			#header .logo .icon:before {
@@ -1680,3 +1663,21 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+/* Force logo image sizing on desktop + mobile */
+#header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  line-height: normal; /* override template */
+}
+
+#header .logo img.logo-img {
+  width: 30% !important;
+  height: 30% !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain;
+  display: block;
+}
