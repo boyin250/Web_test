@@ -1687,8 +1687,3 @@ input, select, textarea {
   object-fit: contain !important;   /* show whole figure */
   object-position: center !important;
 }
-/* Logo image: don't crop */
-#header .logo .logo-img {
-  object-fit: contain !important;  /* show the whole figure */
-  object-position: center !important;
-}
