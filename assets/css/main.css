@@ -1670,7 +1670,7 @@ input, select, textarea {
   border-radius: 100%;
 
   /* override template's icon-centering technique */
-  line-height: 0 !important;        /* important: kills the tall line box */
+  line-height: normal !important;        /* important: kills the tall line box */
   display: flex !important;
   align-items: center;
   justify-content: center;
