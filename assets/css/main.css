@@ -1298,17 +1298,22 @@ input, select, textarea {
 			border-radius: 100%;
 		}
 
+/* Make the logo circle a flex container and ignore the old line-height centering */
 #header .logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* keep it inside the circle */
+  overflow: hidden;
+
+  /* override template icon centering rules */
+  line-height: normal;
 }
 
+/* Size the image relative to the circle */
 #header .logo .logo-img {
-  width: 20%;
-  height: 20%;
-  object-fit: contain; /* or cover if you want it to fill */
+  width: 80%;
+  height: 80%;
+  object-fit: contain; /* use 'cover' if you want it to fill the circle */
   display: block;
 }
 
