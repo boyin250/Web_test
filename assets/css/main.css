@@ -1667,7 +1667,7 @@ input, select, textarea {
 /* --- Logo image: consistent on desktop + mobile --- */
 #header .logo {
   /* keep the circle from the template */
-  border-radius: 100%;
+  border-radius: 50%;
 
   /* override template's icon-centering technique */
   line-height: 0 !important;        /* important: kills the tall line box */
