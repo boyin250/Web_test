@@ -1664,20 +1664,26 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-/* Force logo image sizing on desktop + mobile */
+/* --- Logo image: consistent on desktop + mobile --- */
 #header .logo {
-  display: flex;
+  /* keep the circle from the template */
+  border-radius: 100%;
+
+  /* override template's icon-centering technique */
+  line-height: 0 !important;        /* important: kills the tall line box */
+  display: flex !important;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  line-height: normal; /* override template */
+
+  overflow: hidden;                 /* keep circular mask */
+  padding: 0.75rem;                 /* breathing room so it won't look cropped */
 }
 
 #header .logo img.logo-img {
-  width: 40% !important;
-  height: 40% !important;
-  max-width: none !important;
-  max-height: none !important;
-  object-fit: contain;
   display: block;
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: contain !important;   /* show whole figure */
+  object-position: center !important;
 }
