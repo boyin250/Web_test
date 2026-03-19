@@ -1306,8 +1306,8 @@ input, select, textarea {
 }
 
 #header .logo .logo-img {
-  width: 70%;
-  height: 70%;
+  width: 20%;
+  height: 20%;
   object-fit: contain; /* or cover if you want it to fill */
   display: block;
 }
