@@ -1674,8 +1674,8 @@ input, select, textarea {
 }
 
 #header .logo img.logo-img {
-  width: 30% !important;
-  height: 30% !important;
+  width: 40% !important;
+  height: 40% !important;
   max-width: none !important;
   max-height: none !important;
   object-fit: contain;
