@@ -1664,4 +1664,21 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+/* Force logo image sizing on desktop + mobile */
+#header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  line-height: normal; /* override template */
+}
+
+#header .logo img.logo-img {
+  width: 40% !important;
+  height: 40% !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain;
+  display: block;
+}
 
