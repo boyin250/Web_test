@@ -1298,6 +1298,20 @@ input, select, textarea {
 			border-radius: 100%;
 		}
 
+#header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* keep it inside the circle */
+}
+
+#header .logo .logo-img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain; /* or cover if you want it to fill */
+  display: block;
+}
+
 
 			#header .logo .icon:before {
 				font-size: 2rem;
