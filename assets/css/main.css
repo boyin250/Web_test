@@ -1313,7 +1313,7 @@ input, select, textarea {
 #header .logo .logo-img {
   width: 20%;
   height: 20%;
-  object-fit: contain; /* use 'cover' if you want it to fill the circle */
+  object-fit: cover; /* use 'cover' if you want it to fill the circle */
   display: block;
 }
 
