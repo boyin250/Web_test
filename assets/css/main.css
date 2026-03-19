@@ -1664,26 +1664,4 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-/* --- Logo image: consistent on desktop + mobile --- */
-#header .logo {
-  /* keep the circle from the template */
-  border-radius: 100%;
 
-  /* override template's icon-centering technique */
-  line-height: normal !important;        /* important: kills the tall line box */
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-
-  overflow: hidden;                 /* keep circular mask */
-  padding: 0.75rem;                 /* breathing room so it won't look cropped */
-}
-
-#header .logo img.logo-img {
-  display: block;
-  width: 100% !important;
-  height: 100% !important;
-
-  object-fit: contain !important;   /* show whole figure */
-  object-position: center !important;
-}
