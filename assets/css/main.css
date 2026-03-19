@@ -1311,8 +1311,8 @@ input, select, textarea {
 
 /* Size the image relative to the circle */
 #header .logo .logo-img {
-  width: 20%;
-  height: 20%;
+  width: 40%;
+  height: 40%;
   object-fit: cover; /* use 'cover' if you want it to fill the circle */
   display: block;
 }
